@@ -51,5 +51,6 @@ public class BubbleSort
                 sorted = true;
             };
         }
+        return;
     }
 }
