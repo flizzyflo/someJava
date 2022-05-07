@@ -1,4 +1,3 @@
-package someJava;
 
 
 public class InsertionSearch{

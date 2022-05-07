@@ -1,5 +1,3 @@
-package someJava;
-
 public class Palindrome {
     
     protected boolean isPalindrome(String inputWord)
