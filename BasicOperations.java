@@ -28,7 +28,7 @@ public class BasicOperations
             }
             default:
             return 0;
-
+            
         }
     }
 }
