@@ -1,4 +1,3 @@
-import javax.management.relation.RoleResult;
 
 public class CountSheeps {
     public static String countingSheep(int num) 
