@@ -4,7 +4,6 @@ public class SmileFaces {
   
   public static int countSmileys(List<String> arr) {
   {
-    List <String> items = Arrays.asList(":", ";", "D", ")");
     int checkSum = 0;
     int totalCount = 0;
     
