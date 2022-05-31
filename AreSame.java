@@ -1,34 +1,24 @@
+import java.util.Arrays;
+
 public class AreSame 
 {
     public static boolean comp(int[] a, int[] b) 
     {
-        boolean foundNumber = true;
-
-        for (int i = 0; i < a.length; i++)
-        {    
-            for (int j = 0; j < b.length; j++)
-            {
-                if (Math.pow(a[i], 2) == b[j])
-                {
-                    foundNumber = true;
-                    continue;
-                }
-                else if (Math.pow(a[i], 2) != b[j])
-                {
-                    foundNumber = false;
-                }
-                
-            } 
+        if (a == null || b == null)
+        {
+            return false;
         }
-
-
-        return foundNumber;
+        
+        for (int i = 0; i< a.length; i ++)
+            {
+                a[i] = (int) Math.pow(a[i], 2);
+            };
+        
+        Arrays.sort(a);
+        Arrays.sort(b);
+        
+        return Arrays.equals(a, b);
+        
     }
 
-    public static void main(String[] args)
-    {
-        int [] ara = {1,3,5,7};
-        int [] bra = {1,9,4,49};
-        System.out.println(comp(ara, bra));
-    }
 } 
